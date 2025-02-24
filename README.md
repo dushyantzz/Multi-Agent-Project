@@ -1,10 +1,79 @@
 # 🤖 Agentic AI Project: Single and Multi-Agent Systems for Research
 
-> 🌟 An intelligent research automation system powered by CrewAI and Google's Gemini Pro
+## 🔍 Single Agent System
 
-This repository showcases two powerful approaches to AI-driven research:
-- 🎯 **`single_agent.py`**: A focused, single-agent researcher
-- 👥 **`multi_agent.py`**: A collaborative team of specialized AI agents
+### 🎯 Purpose & Benefits
+The single agent system (`single_agent.py`) is designed for:
+- 🎯 **Focused Research Tasks**: Perfect for well-defined, specific research topics
+- 🚀 **Quick Turnaround**: Streamlined process with a single agent handling everything
+- 💡 **Consistent Output**: One agent maintaining the same style throughout
+- 📊 **Resource Efficiency**: Lower computational overhead compared to multi-agent systems
+
+#### 🔥 Ideal Use Cases:
+- 📝 Quick topic research and summarization
+- 🔍 Specific technical documentation needs
+- 📊 Market research on specific products/services
+- 📚 Educational content creation
+
+### 🛠️ How It Works
+1. 🎯 **Topic Input**: User provides a research topic
+2. 🔍 **Web Search**: Agent uses SerperDev API to gather information
+3. 🧠 **Analysis**: Processes information using Gemini Pro
+4. 📝 **Summarization**: Creates a comprehensive, structured summary
+
+## 👥 Multi-Agent System
+
+### 🎯 Purpose & Benefits
+The multi-agent system (`multi_agent.py`) leverages specialized agents for:
+- 🤝 **Division of Labor**: Each agent focuses on their expertise
+- 🎭 **Different Perspectives**: Multiple agents providing varied insights
+- 📈 **Enhanced Quality**: Specialized handling of research and writing
+- 🔄 **Natural Workflow**: Mimics real-world research team dynamics
+
+#### 🔥 Ideal Use Cases:
+- 📰 Creating comprehensive research articles
+- 🏥 Healthcare technology analysis
+- 💼 Business strategy research
+- 🔬 Scientific literature review
+
+### 🛠️ How It Works
+1. 🔍 **Research Phase**:
+   - Research Agent gathers and analyzes information
+   - Focuses on accuracy and comprehensive coverage
+   - Creates structured research findings
+
+2. ✍️ **Writing Phase**:
+   - Writer Agent takes research findings
+   - Transforms technical content into engaging prose
+   - Ensures accessibility and readability
+   - Produces polished final article
+
+### 🔄 Agent Interaction Flow
+```mermaid
+graph TD
+    A[User Input] --> B[Research Agent]
+    B --> |Raw Research| C[Writer Agent]
+    C --> |Polish Content| D[Final Article]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#bbf,stroke:#333,stroke-width:4px
+    style C fill:#bfb,stroke:#333,stroke-width:4px
+    style D fill:#fbb,stroke:#333,stroke-width:4px
+```
+
+## 🤔 Choosing Between Single and Multi-Agent
+
+### 👤 Choose Single Agent When:
+- 🎯 Need quick, focused research
+- 📊 Working with specific, well-defined topics
+- 💰 Resource optimization is important
+- ⏱️ Time is a critical factor
+
+### 👥 Choose Multi-Agent When:
+- 🎭 Need diverse perspectives
+- 📚 Working on complex topics
+- 📝 Quality of writing is crucial
+- 🔄 Need separation of research and writing
 
 ## 📚 Table of Contents
 
